@@ -201,7 +201,7 @@ while True:
                                                 print ("Drowsy")
                                                 send_iot_data()
                                                 lcd.clear()
-                                                lcd.message('CANH BAO!!!! \nHay chu y..')       
+                                                lcd.message('CANH BAO!!!! \nHay chu y...')       
                                                 pygame.mixer.init()
                                                 pygame.mixer.music.load("/home/pi/Drowsiness_Detection/alert.mp3")
                                                 pygame.mixer.music.play()
