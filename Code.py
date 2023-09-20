@@ -159,7 +159,7 @@ while True:
                 thresh = 0.25
                 frame_check = 20
                 detect = dlib.get_frontal_face_detector()
-                predict = dlib.shape_predictor("/home/pi/Drowsiness_Detection/shape_predictor_68_face_landmarks.dat")# Dat file is the crux of the code
+                predict = dlib.shape_predictor("/home/pi/Drowsiness_Detection/shape_predictor_68_face_landmarks.dat")
                 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["left_eye"]
                 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_68_IDXS["right_eye"]
                 camera=cv2.VideoCapture(0)
@@ -201,7 +201,7 @@ while True:
                                                 print ("Drowsy")
                                                 send_iot_data()
                                                 lcd.clear()
-                                                lcd.message('Alert!!!! \nPay attention..')       
+                                                lcd.message('CANH BAO!!!! \nHay chu y..')       
                                                 pygame.mixer.init()
                                                 pygame.mixer.music.load("/home/pi/Drowsiness_Detection/alert.mp3")
                                                 pygame.mixer.music.play()
